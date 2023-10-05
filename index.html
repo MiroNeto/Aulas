@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Completo de HTML5</title>
+    <link rel="stylesheet" href="arquivo.css">
+    <link rel="import" href="navbar.html">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <script>
+        const navbarPlaceholder = document.getElementById('navbar-placeholder');
+    
+        // Carrega a navbar do arquivo navbar.html
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', 'navbar.html', true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
+                navbarPlaceholder.innerHTML = xhr.responseText;
+            }
+        };
+        xhr.send();
+    </script>
+    <h1>Guia Completo de HTML5</h1>
+
+    <h2>Estrutura Básica de um Documento HTML5</h2>
+    <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Título da Página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    Conteúdo da Página
+&lt;/body&gt;
+&lt;/html&gt;
+    </code></pre>
+
+    <h2>Principais Elementos de Texto</h2>
+
+    <h3>Títulos</h3>
+    <pre><code>
+&lt;h1&gt;Título Principal&lt;/h1&gt;
+&lt;h2&gt;Subtítulo&lt;/h2&gt;
+...
+&lt;h6&gt;Título de menor importância&lt;/h6&gt;
+    </code></pre>
+
+    <h3>Parágrafos</h3>
+    <pre><code>
+&lt;p&gt;Este é um parágrafo de texto.&lt;/p&gt;
+    </code></pre>
+
+    <h3>Estilos de Texto</h3>
+    <pre><code>
+&lt;strong&gt;Texto em negrito&lt;/strong&gt;
+&lt;em&gt;Texto em itálico&lt;/em&gt;
+    </code></pre>
+
+    <h2>Listas</h2>
+
+    <h3>Listas Não Ordenadas</h3>
+    <pre><code>
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+    </code></pre>
+
+    <h3>Listas Ordenadas</h3>
+    <pre><code>
+&lt;ol&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ol&gt;
+    </code></pre>
+
+    <h2>Links</h2>
+
+    <h3>Links para Email</h3>
+    <pre><code>
+&lt;a href="mailto:exemplo@email.com"&gt;Enviar Email&lt;/a&gt;
+    </code></pre>
+
+    <h3>Links Externos</h3>
+    <pre><code>
+&lt;a href="https://www.example.com" target="_blank"&gt;Link Externo&lt;/a&gt;
+    </code></pre>
+
+    <h2>Imagens</h2>
+
+    <h3>Inserindo Imagens</h3>
+    <pre><code>
+&lt;img src="caminho/da/imagem.jpg" alt="Descrição da Imagem"&gt;
+    </code></pre>
+
+    <h2>Formulários</h2>
+
+    <h3>Campos de Entrada</h3>
+    <pre><code>
+&lt;input type="text" placeholder="Nome"&gt;
+&lt;input type="password" placeholder="Senha"&gt;
+&lt;input type="email" placeholder="Email"&gt;
+&lt;input type="number" placeholder="Número"&gt;
+    </code></pre>
+
+    <h3>Botões</h3>
+    <pre><code>
+&lt;button&gt;Enviar&lt;/button&gt;
+&lt;input type="submit" value="Enviar"&gt;
+    </code></pre>
+
+    <h3>Dropdowns com &lt;select&gt;</h3>
+    <pre><code>
+&lt;select&gt;
+    &lt;option value="opcao1"&gt;Opção 1&lt;/option&gt;
+    &lt;option value="opcao2"&gt;Opção 2&lt;/option&gt;
+    &lt;option value="opcao3"&gt;Opção 3&lt;/option&gt;
+&lt;/select&gt;
+    </code></pre>
+
+    <h3>Envio de Arquivos</h3>
+    <pre><code>
+&lt;input type="file"&gt;
+    </code></pre>
+
+    <h2>Tabelas</h2>
+
+    <h3>Criando uma Tabela Simples</h3>
+    <pre><code>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Cabeçalho 1&lt;/th&gt;
+        &lt;th&gt;Cabeçalho 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Dado 1&lt;/td&gt;
+        &lt;td&gt;Dado 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+    </code></pre>
+
+    <h2>Elementos de Navegação</h2>
+
+    <h3>Menu de Navegação</h3>
+    <pre><code>
+&lt;nav&gt;
+    &lt;a href="#home"&gt;Home&lt;/a&gt;
+    &lt;a href="#sobre"&gt;Sobre&lt;/a&gt;
+    &lt;a href="#contato"&gt;Contato&lt;/a&gt;
+&lt;/nav&gt;
+    </code></pre>
+
+    <h2>Áudio e Vídeo</h2>
+
+    <h3>Inserindo Áudio</h3>
+    <pre><code>
+&lt;audio controls&gt;
+    &lt;source src="caminho/do/audio.mp3" type="audio/mp3"&gt;
+    Seu navegador não suporta o elemento audio.
+&lt;/audio&gt;
+    </code></pre>
+
+    <h3>Inserindo Vídeo</h3>
+    <pre><code>
+&lt;video controls&gt;
+    &lt;source src="caminho/do/video.mp4" type="video/mp4"&gt;
+    Seu navegador não suporta o elemento video.
+&lt;/video&gt;
+    </code></pre>
+
+    <h2>Elementos Semânticos</h2>
+
+    <h3>Seções com &lt;section&gt;</h3>
+    <pre><code>
+&lt;section&gt;
+    &lt;h2&gt;Título da Seção&lt;/h2&gt;
+    &lt;p&gt;Conteúdo da seção.&lt;/p&gt;
+&lt;/section&gt;
+    </code></pre>
+
+    <h3>Cabeçalhos com &lt;header&gt;</h3>
+    <pre><code>
+&lt;header&gt;
+    &lt;h1&gt;Título do Site&lt;/h1&gt;
+    &lt;nav&gt;
+        &lt;a href="#home"&gt;Home&lt;/a&gt;
+        &lt;a href="#sobre"&gt;Sobre&lt;/a&gt;
+        &lt;a href="#contato"&gt;Contato&lt;/a&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;
+    </code></pre>
+
+    <h3>Rodapé com &lt;footer&gt;</h3>
+    <pre><code>
+&lt;footer&gt;
+    &lt;p&gt;© 2023 Prof. Miro&lt;/p&gt;
+&lt;/footer&gt;
+    </code></pre>
+
+    <h2>Comentários</h2>
+
+    <h3>Comentários em HTML</h3>
+    <pre><code>
+&lt;!-- Este é um comentário em HTML --&gt;
+    </code></pre>
+
+    <h2>Conclusão</h2>
+    <p>Parabéns! Você completou o guia de HTML5.</p>
+
+</body>
+</html>

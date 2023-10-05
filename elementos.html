@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de Navegação em HTML5</title>
+    <link rel="stylesheet" href="arquivo.css">
+    <link rel="import" href="navbar.html">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+<script>
+    const navbarPlaceholder = document.getElementById('navbar-placeholder');
+
+    // Carrega a navbar do arquivo navbar.html
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', 'navbar.html', true);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
+            navbarPlaceholder.innerHTML = xhr.responseText;
+        }
+    };
+    xhr.send();
+</script>
+    <h1>Elementos de Navegação em HTML5</h1>
+
+    <p>Os elementos de navegação ajudam a criar uma estrutura coerente e amigável para os usuários. Veja alguns exemplos:</p>
+
+    <h2>Menu de Navegação</h2>
+    <pre><code>
+&lt;nav&gt;
+    &lt;a href="#home"&gt;Home&lt;/a&gt;
+    &lt;a href="#sobre"&gt;Sobre&lt;/a&gt;
+    &lt;a href="#contato"&gt;Contato&lt;/a&gt;
+&lt;/nav&gt;
+    </code></pre>
+
+    <footer>
+        <p>© 2023 Prof Miro</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura Básica de um Documento HTML5</title>
+    <link rel="stylesheet" href="arquivo.css">
+    <link rel="import" href="navbar.html">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+<script>
+    const navbarPlaceholder = document.getElementById('navbar-placeholder');
+
+    // Carrega a navbar do arquivo navbar.html
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', 'navbar.html', true);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
+            navbarPlaceholder.innerHTML = xhr.responseText;
+        }
+    };
+    xhr.send();
+</script>
+    <h1>Estrutura Básica de um Documento HTML5</h1>
+
+    <p>O HTML5 introduziu uma estrutura mais simples para criar páginas web. Veja um exemplo básico abaixo:</p>
+
+    <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Título da Página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    Conteúdo da Página
+&lt;/body&gt;
+&lt;/html&gt;
+    </code></pre>
+
+    <p>Neste exemplo:</p>
+
+    <ul>
+        <li><code>&lt;!DOCTYPE html&gt;</code>: Define que este é um documento HTML5.</li>
+        <li><code>&lt;html&gt;</code>: Contém todo o conteúdo da página.</li>
+        <li><code>&lt;head&gt;</code>: Contém informações sobre o documento, como o título.</li>
+        <li><code>&lt;title&gt;</code>: Define o título da página exibido na barra de título do navegador.</li>
+        <li><code>&lt;body&gt;</code>: Contém o conteúdo visível da página.</li>
+    </ul>
+
+    <p>Este é o esqueleto básico que você deve usar ao iniciar uma nova página HTML5.</p>
+
+    <footer>
+        <p>© 2023 Prof. Miro</p>
+    </footer>
+</body>
+</html>

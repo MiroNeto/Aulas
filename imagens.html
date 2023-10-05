@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens em HTML5</title>
+    <link rel="stylesheet" href="arquivo.css">
+    <link rel="import" href="navbar.html">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <script>
+        const navbarPlaceholder = document.getElementById('navbar-placeholder');
+    
+        // Carrega a navbar do arquivo navbar.html
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', 'navbar.html', true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
+                navbarPlaceholder.innerHTML = xhr.responseText;
+            }
+        };
+        xhr.send();
+    </script>
+    <h1>Imagens em HTML5</h1>
+
+    <p>As imagens são fundamentais para tornar uma página mais atrativa. Veja como inserir uma imagem em HTML5:</p>
+
+    <h2>Inserindo Imagens</h2>
+    <pre><code>
+&lt;img src="caminho/da/imagem.jpg" alt="Descrição da Imagem"&gt;
+    </code></pre>
+
+    <footer>
+        <p>© 2023 Prof. Miro</p>
+    </footer>
+</body>
+</html>

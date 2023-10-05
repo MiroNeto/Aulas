@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários em HTML5</title>
+    <link rel="stylesheet" href="arquivo.css">
+    <link rel="import" href="navbar.html">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+<script>
+    const navbarPlaceholder = document.getElementById('navbar-placeholder');
+
+    // Carrega a navbar do arquivo navbar.html
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', 'navbar.html', true);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
+            navbarPlaceholder.innerHTML = xhr.responseText;
+        }
+    };
+    xhr.send();
+</script>
+    <h1>Formulários em HTML5</h1>
+
+    <p>Os formulários são cruciais para a interação do usuário. Veja como criar campos e botões de envio em HTML5:</p>
+
+    <h2>Campos de Entrada</h2>
+    <pre><code>
+&lt;input type="text" placeholder="Nome"&gt;
+&lt;input type="password" placeholder="Senha"&gt;
+&lt;input type="email" placeholder="Email"&gt;
+&lt;input type="number" placeholder="Número"&gt;
+    </code></pre>
+
+    <h2>Botões</h2>
+    <pre><code>
+&lt;button&gt;Enviar&lt;/button&gt;
+&lt;input type="submit" value="Enviar"&gt;
+    </code></pre>
+
+    <footer>
+        <p>© 2023 Prof. Miro</p>
+    </footer>
+</body>
+</html>

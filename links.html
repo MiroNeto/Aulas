@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links em HTML5</title>
+    <link rel="stylesheet" href="arquivo.css">
+    <link rel="import" href="navbar.html">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <script>
+        const navbarPlaceholder = document.getElementById('navbar-placeholder');
+    
+        // Carrega a navbar do arquivo navbar.html
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', 'navbar.html', true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
+                navbarPlaceholder.innerHTML = xhr.responseText;
+            }
+        };
+        xhr.send();
+    </script>
+    <h1>Links em HTML5</h1>
+
+    <p>Os links permitem navegar para outras páginas ou recursos. Aqui estão alguns exemplos de como usá-los:</p>
+
+    <h2>Links para Email</h2>
+    <pre><code>
+&lt;a href="mailto:seuemail@dominio.com"&gt;Enviar Email&lt;/a&gt;
+    </code></pre>
+
+    <h2>Links Externos</h2>
+    <pre><code>
+&lt;a href="https://www.example.com" target="_blank"&gt;Link Externo&lt;/a&gt;
+    </code></pre>
+
+    <footer>
+        <p>© 2023 Nome do seu Site</p>
+    </footer>
+</body>
+</html>

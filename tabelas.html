@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas em HTML5</title>
+    <link rel="stylesheet" href="arquivo.css">
+    <link rel="import" href="navbar.html">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+<script>
+    const navbarPlaceholder = document.getElementById('navbar-placeholder');
+
+    // Carrega a navbar do arquivo navbar.html
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', 'navbar.html', true);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
+            navbarPlaceholder.innerHTML = xhr.responseText;
+        }
+    };
+    xhr.send();
+</script>
+    <h1>Tabelas em HTML5</h1>
+
+    <p>As tabelas são usadas para exibir dados em formato tabular. Veja como criar uma tabela simples em HTML5:</p>
+
+    <h2>Criando uma Tabela Simples</h2>
+    <pre><code>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Cabeçalho 1&lt;/th&gt;
+        &lt;th&gt;Cabeçalho 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Dado 1&lt;/td&gt;
+        &lt;td&gt;Dado 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+    </code></pre>
+
+    <footer>
+        <p>© 2023 Prof. Miro</p>
+    </footer>
+</body>
+</html>

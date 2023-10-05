@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentários em HTML5</title>
+    <link rel="stylesheet" href="arquivo.css">
+    <link rel="import" href="navbar.html">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+<script>
+    const navbarPlaceholder = document.getElementById('navbar-placeholder');
+
+    // Carrega a navbar do arquivo navbar.html
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', 'navbar.html', true);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
+            navbarPlaceholder.innerHTML = xhr.responseText;
+        }
+    };
+    xhr.send();
+</script>
+    <h1>Comentários em HTML5</h1>
+
+    <p>Os comentários são úteis para documentar seu código e fazer anotações. Veja como adicionar comentários em HTML5:</p>
+
+    <h2>Comentários em HTML</h2>
+    <pre><code>
+&lt;!-- Este é um comentário em HTML --&gt;
+    </code></pre>
+
+    <footer>
+        <p>© 2023 Prof. Miro</p>
+    </footer>
+
+</body>
+</html>

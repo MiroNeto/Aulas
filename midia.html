@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áudio e Vídeo em HTML5</title>
+    <link rel="stylesheet" href="arquivo.css">
+    <link rel="import" href="navbar.html">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+<script>
+    const navbarPlaceholder = document.getElementById('navbar-placeholder');
+
+    // Carrega a navbar do arquivo navbar.html
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', 'navbar.html', true);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
+            navbarPlaceholder.innerHTML = xhr.responseText;
+        }
+    };
+    xhr.send();
+</script>
+    <h1>Áudio e Vídeo em HTML5</h1>
+
+    <p>HTML5 permite a incorporação fácil de áudio e vídeo em páginas da web. Veja como fazer isso:</p>
+
+    <h2>Inserindo Áudio</h2>
+    <pre><code>
+&lt;audio controls&gt;
+    &lt;source src="caminho/do/audio.mp3" type="audio/mp3"&gt;
+    Seu navegador não suporta o elemento audio.
+&lt;/audio&gt;
+    </code></pre>
+
+    <h2>Inserindo Vídeo</h2>
+    <pre><code>
+&lt;video controls&gt;
+    &lt;source src="caminho/do/video.mp4" type="video/mp4"&gt;
+    Seu navegador não suporta o elemento video.
+&lt;/video&gt;
+    </code></pre>
+
+    <footer>
+        <p>© 2023 Prof. Miro</p>
+    </footer>
+</body>
+</html>

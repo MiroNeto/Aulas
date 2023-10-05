@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Completo de CSS</title>
+    <link rel="stylesheet" href="pag2.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Curso Completo de CSS</h1>
+            <p>Um guia abrangente sobre CSS para iniciantes e avançados.</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#seletores">Seletores</a></li>
+                <li><a href="#cores">Cores</a></li>
+                <li><a href="#layouts">Layouts</a></li>
+                <li><a href="#flexbox">Flexbox</a></li>
+                <li><a href="#grid">Grid</a></li>
+                <li><a href="#transicoes-animacoes">Transições e Animações</a></li>
+                <li><a href="#responsividade">Responsividade e Media Queries</a></li>
+                <li><a href="#box-model">Box Model</a></li>
+                <li><a href="#transformacoes-css">Transformações CSS</a></li>
+                <li><a href="#filtros-css">Filtros CSS</a></li>
+                <li><a href="#posicionamento-css">Posicionamento CSS</a></li>
+                <li><a href="#tipografia-fontes">Tipografia e Fontes</a></li>
+                <li><a href="#gradientes-css">Gradientes CSS</a></li>
+                <li><a href="#conclusao">Conclusão</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="introducao">
+                <h2>Introdução ao CSS</h2>
+                <p>O CSS (Cascading Style Sheets) é uma linguagem de estilo usada para controlar a apresentação visual de uma página HTML. Permite definir o layout, cores e estilos para os elementos HTML.</p>
+                <p>O CSS é fundamental para criar sites atraentes e bem organizados. Vamos explorar os principais conceitos e propriedades do CSS neste guia.</p>
+            </section>
+
+            <section id="seletores">
+                <h2>Seletores CSS</h2>
+                <p>Os seletores CSS são padrões que são usados para selecionar e estilizar os elementos HTML. Eles podem ser simples, como a seleção de uma tag, ou mais complexos, como seleções baseadas em classes ou IDs.</p>
+                <p>Exemplo de seleção por tag:</p>
+                <pre><code>
+p {
+    color: blue;
+}
+                </code></pre>
+            </section>
+
+            <section id="cores">
+                <h2>Cores em CSS</h2>
+                <p>As cores podem ser especificadas de várias maneiras em CSS, incluindo nomes de cores, códigos hexadecimais, RGB, RGBA e muito mais. As cores são essenciais para a aparência de um site.</p>
+                <p>Exemplos:</p>
+                <pre><code>
+body {
+    background-color: white;
+}
+
+h1 {
+    color: #FF0000;
+}
+                </code></pre>
+            </section>
+
+            <section id="layouts">
+                <h2>Layouts com CSS</h2>
+                <p>O CSS permite criar diferentes layouts para as páginas web. Você pode usar flexbox, grids, posicionamento e outros recursos para organizar o conteúdo de maneira eficaz.</p>
+                <p>Exemplo de uso de flexbox:</p>
+                <pre><code>
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+                </code></pre>
+            </section>
+
+            <section id="flexbox">
+                <h2>Flexbox em CSS</h2>
+                <p>Flexbox é um layout unidimensional que permite organizar itens dentro de um contêiner de maneira mais eficiente. É amplamente utilizado para criar layouts flexíveis e responsivos.</p>
+                <p>Exemplo de uso de flexbox:</p>
+                <pre><code>
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+                </code></pre>
+            </section>
+
+            <section id="grid">
+                <h2>Grid em CSS</h2>
+                <p>O Grid Layout é uma ferramenta bidimensional que permite a criação de layouts complexos e flexíveis. É uma ótima opção para alinhar elementos em linhas e colunas.</p>
+                <p>Exemplo de uso de grid:</p>
+                <pre><code>
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+                </code></pre>
+            </section>
+
+            <section id="transicoes-animacoes">
+                <h2>Transições e Animações</h2>
+                <p>Transições e animações são formas de adicionar movimento e interatividade aos elementos HTML usando CSS. Podem ser aplicadas a propriedades como cor, tamanho e posição.</p>
+                <p>Exemplo de transição suave:</p>
+                <pre><code>
+.button {
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #555;
+}
+                </code></pre>
+            </section>
+
+            <section id="responsividade">
+                <h2>Responsividade e Media Queries</h2>
+                <p>É fundamental criar layouts que se adaptem a diferentes dispositivos e tamanhos de tela. As Media Queries permitem aplicar estilos com base nas características do dispositivo.</p>
+                <p>Exemplo de uso de Media Query:</p>
+                <pre><code>
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
+                </code></pre>
+            </section>
+
+            <section id="box-model">
+                <h2>Box Model</h2>
+                <p>O Box Model é uma representação visual de como os elementos HTML são renderizados no navegador. Ele inclui propriedades como margin, border, padding e content.</p>
+                <p>Exemplo de uso do Box Model:</p>
+                <pre><code>
+.box {
+    width: 200px;
+    padding: 20px;
+    border: 2px solid #333;
+    margin: 10px;
+}
+                </code></pre>
+            </section>
+
+            <section id="transformacoes-css">
+                <h2>Transformações CSS</h2>
+                <p>As transformações CSS permitem alterar a aparência de um elemento de uma maneira 2D ou 3D. Você pode aplicar rotações, escalas, translações e inclinações.</p>
+                <p>Exemplo de transformações 2D:</p>
+                <pre><code>
+.element {
+    transform: rotate(45deg);
+}
+                </code></pre>
+            </section>
+
+            <section id="filtros-css">
+                <h2>Filtros CSS</h2>
+                <p>Os filtros CSS permitem aplicar efeitos visuais em elementos HTML, como desfoque, saturação, brilho, entre outros. São úteis para ajustar a estética das imagens.</p>
+                <p>Exemplo de aplicação de filtro:</p>
+                <pre><code>
+.image {
+    filter: grayscale(50%);
+}
+                </code></pre>
+            </section>
+
+            <section id="posicionamento-css">
+                <h2>Posicionamento CSS</h2>
+                <p>O posicionamento em CSS é crucial para controlar a localização dos elementos em uma página web. Você pode usar position, top, bottom, left e right para isso.</p>
+                <p>Exemplo de posicionamento absoluto:</p>
+                <pre><code>
+.element {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+                </code></pre>
+            </section>
+
+            <section id="tipografia-fontes">
+                <h2>Tipografia e Fontes</h2>
+                <p>A escolha adequada da tipografia e das fontes é fundamental para a legibilidade e o apelo visual de um site. O CSS oferece várias propriedades para estilizar o texto.</p>
+                <p>Exemplo de estilização de fonte:</p>
+                <pre><code>
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
+                </code></pre>
+            </section>
+
+            <section id="gradientes-css">
+                <h2>Gradientes CSS</h2>
+                <p>Os gradientes CSS permitem criar transições suaves entre duas ou mais cores. Podem ser lineares ou radiais, adicionando profundidade e estilo aos elementos.</p>
+                <p>Exemplo de gradiente linear:</p>
+                <pre><code>
+.element {
+    background: linear-gradient(to right, red, yellow);
+}
+                </code></pre>
+            </section>
+
+            <section id="conclusao">
+                <h2>Conclusão</h2>
+                <p>Parabéns! Você concluiu o Curso Completo de CSS. Continue praticando e experimentando para aprimorar suas habilidades em CSS!</p>
+                <p class="conclusion">Esperamos que este guia tenha sido útil para você. Boa sorte em sua jornada com o CSS!</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 Curso Completo de CSS by Prof. Miro</p>
+        </footer>
+    </div>
+</body>
+</html>

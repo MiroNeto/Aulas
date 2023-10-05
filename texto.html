@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principais Elementos de Texto</title>
+    <link rel="stylesheet" href="arquivo.css">
+    <link rel="import" href="navbar.html">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <script>
+        const navbarPlaceholder = document.getElementById('navbar-placeholder');
+    
+        // Carrega a navbar do arquivo navbar.html
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', 'navbar.html', true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
+                navbarPlaceholder.innerHTML = xhr.responseText;
+            }
+        };
+        xhr.send();
+    </script>
+    <h1>Principais Elementos de Texto</h1>
+
+    <p>HTML5 oferece uma variedade de elementos para estruturar e formatar texto. Abaixo estão alguns dos principais elementos:</p>
+
+    <ul>
+        <li><code>&lt;h1&gt;</code> até <code>&lt;h6&gt;</code>: Títulos de diferentes níveis de importância.</li>
+        <li><code>&lt;p&gt;</code>: Parágrafos de texto.</li>
+        <li><code>&lt;strong&gt;</code>: Texto em negrito.</li>
+        <li><code>&lt;em&gt;</code>: Texto em itálico.</li>
+    </ul>
+
+    <footer>
+        <p>© 2023 Prof. Miro</p>
+    </footer>
+</body>
+</html>
