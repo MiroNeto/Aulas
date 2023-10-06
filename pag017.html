@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de JavaScript - Objetos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Explorando Objetos em JavaScript</h1>
+        <p>Aprenda a trabalhar com objetos, uma estrutura fundamental para organizar dados.</p>
+    </header>
+
+    <main>
+        <section id="introducao">
+            <h2>O que é um Objeto?</h2>
+            <p>Em JavaScript, um objeto é uma coleção de pares chave-valor, onde as chaves são strings e os valores podem ser de qualquer tipo de dado.</p>
+            <p>Exemplo de declaração de um objeto:</p>
+            <pre>
+                <code>
+                    let pessoa = {
+                        nome: 'João',
+                        idade: 30,
+                        cidade: 'São Paulo'
+                    };
+                </code>
+            </pre>
+        </section>
+
+        <section id="acesso">
+            <h2>Acesso a Propriedades</h2>
+            <p>As propriedades de um objeto podem ser acessadas usando a notação de ponto ou colchetes.</p>
+            <p>Exemplo de acesso a propriedades:</p>
+            <pre>
+                <code>
+                    console.log(pessoa.nome);  // Saída: João
+                    console.log(pessoa['idade']);  // Saída: 30
+                </code>
+            </pre>
+        </section>
+
+        <section id="metodos">
+            <h2>Métodos de Objeto</h2>
+            <p>Além de armazenar dados, os objetos em JavaScript podem conter funções, chamadas de métodos.</p>
+            <p>Exemplo de método em um objeto:</p>
+            <pre>
+                <code>
+                    let pessoa = {
+                        nome: 'Maria',
+                        saudacao: function() {
+                            console.log('Olá, meu nome é ' + this.nome + '!');
+                        }
+                    };
+
+                    pessoa.saudacao();  // Saída: Olá, meu nome é Maria!
+                </code>
+            </pre>
+        </section>
+
+        <!-- Adicione mais exemplos e explicações sobre objetos -->
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Curso de JavaScript</p>
+    </footer>
+</body>
+</html>

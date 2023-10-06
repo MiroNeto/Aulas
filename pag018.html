@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de JavaScript - Funções</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Funções em JavaScript</h1>
+        <p>Aprenda a criar e utilizar funções para organizar seu código.</p>
+    </header>
+
+    <main>
+        <section id="introducao">
+            <h2>O que é uma função?</h2>
+            <p>Uma função é um bloco de código que pode ser chamado e executado. Ela pode receber parâmetros e retornar um valor.</p>
+            <p>Exemplo de declaração de função:</p>
+            <pre>
+                <code>
+                    function saudacao(nome) {
+                        return 'Olá, ' + nome + '!';
+                    }
+
+                    let mensagem = saudacao('João');
+                    console.log(mensagem);  // Saída: Olá, João!
+                </code>
+            </pre>
+        </section>
+
+        <section id="parametros">
+            <h2>Parâmetros e Argumentos</h2>
+            <p>As funções podem receber parâmetros, que são valores passados quando a função é chamada. Esses valores são chamados de argumentos.</p>
+            <p>Exemplo de função com parâmetros:</p>
+            <pre>
+                <code>
+                    function soma(a, b) {
+                        return a + b;
+                    }
+
+                    let resultado = soma(10, 5);
+                    console.log(resultado);  // Saída: 15
+                </code>
+            </pre>
+        </section>
+
+        <section id="retorno">
+            <h2>Retorno de Função</h2>
+            <p>Uma função pode retornar um valor usando a palavra-chave <code>return</code>. Isso finaliza a execução da função e retorna o valor especificado.</p>
+            <p>Exemplo de retorno de função:</p>
+            <pre>
+                <code>
+                    function quadrado(numero) {
+                        return numero * numero;
+                    }
+
+                    let quadradoDe5 = quadrado(5);
+                    console.log(quadradoDe5);  // Saída: 25
+                </code>
+            </pre>
+        </section>
+
+        <!-- Adicione mais exemplos e explicações sobre funções -->
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Curso de JavaScript</p>
+    </footer>
+</body>
+</html>

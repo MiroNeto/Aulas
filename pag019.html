@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de JavaScript - Funções</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Funções em JavaScript</h1>
+        <p>Aprenda sobre a criação e utilização de funções para organizar e reutilizar código em JavaScript.</p>
+    </header>
+
+    <main>
+        <section id="introducao">
+            <h2>O que é uma função?</h2>
+            <p>Uma função é um bloco de código que pode ser chamado e executado em diferentes partes de um programa. Ela pode aceitar parâmetros e retornar um valor.</p>
+            <p>Exemplo de uma função simples:</p>
+            <pre>
+                <code>
+                    function saudacao() {
+                        console.log('Olá! Bem-vindo.');
+                    }
+
+                    saudacao();  // Chama a função para exibir a saudação
+                </code>
+            </pre>
+        </section>
+
+        <section id="parametros">
+            <h2>Parâmetros de uma função</h2>
+            <p>As funções podem aceitar parâmetros, que são valores que a função espera para executar suas ações.</p>
+            <p>Exemplo de uma função com parâmetros:</p>
+            <pre>
+                <code>
+                    function saudacao(nome) {
+                        console.log('Olá, ' + nome + '! Bem-vindo.');
+                    }
+
+                    saudacao('João');  // Chama a função passando 'João' como parâmetro
+                </code>
+            </pre>
+        </section>
+
+        <section id="retorno">
+            <h2>Retorno de uma função</h2>
+            <p>Uma função pode retornar um valor utilizando a palavra-chave <code>return</code>. Esse valor pode ser utilizado em outras partes do programa.</p>
+            <p>Exemplo de uma função que retorna um valor:</p>
+            <pre>
+                <code>
+                    function soma(a, b) {
+                        return a + b;
+                    }
+
+                    let resultado = soma(5, 3);
+                    console.log('A soma é:', resultado);
+                </code>
+            </pre>
+        </section>
+
+        <!-- Adicione mais exemplos e explicações sobre funções -->
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Curso de JavaScript</p>
+    </footer>
+</body>
+</html>

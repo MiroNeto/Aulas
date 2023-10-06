@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de JavaScript - Variáveis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Variáveis em JavaScript</h1>
+        <p>Entenda o conceito de variáveis em JavaScript e como utilizá-las.</p>
+    </header>
+
+    <main>
+        <section id="declaracao">
+            <h2>Declaração de Variáveis</h2>
+            <p>Em JavaScript, usamos <code>var</code>, <code>let</code> e <code>const</code> para declarar variáveis.</p>
+            <p>Exemplo:</p>
+            <pre>
+                <code>
+                    var nome = 'Alice'; // Declaração usando var
+                    let idade = 25; // Declaração usando let
+                    const PI = 3.14; // Declaração usando const
+                </code>
+            </pre>
+        </section>
+
+        <section id="escopo">
+            <h2>Escopo de Variáveis</h2>
+            <p>O escopo de uma variável determina onde ela pode ser acessada dentro do código.</p>
+            <p>Exemplo:</p>
+            <pre>
+                <code>
+                    let x = 10; // Variável global
+
+                    function teste() {
+                        let y = 5; // Variável local dentro da função
+                        console.log(x); // Pode acessar x
+                        console.log(y); // Pode acessar y
+                    }
+
+                    console.log(x); // Pode acessar x
+                    console.log(y); // Erro: y não está definido fora da função
+                </code>
+            </pre>
+        </section>
+
+        <!-- Adicione mais exemplos e explicações sobre variáveis -->
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Curso de JavaScript</p>
+    </footer>
+</body>
+</html>

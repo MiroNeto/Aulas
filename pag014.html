@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de JavaScript - Objetos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Explorando Objetos em JavaScript</h1>
+        <p>Conheça os objetos, estruturas fundamentais que armazenam dados e funcionalidades.</p>
+    </header>
+
+    <main>
+        <section id="introducao">
+            <h2>O que é um Objeto?</h2>
+            <p>Em JavaScript, um objeto é uma estrutura que armazena dados e funcionalidades relacionadas.</p>
+            <p>Exemplo de um objeto representando uma pessoa:</p>
+            <pre>
+                <code>
+                    const pessoa = {
+                        nome: 'João',
+                        idade: 30,
+                        saudacao: function() {
+                            return 'Olá, meu nome é ' + this.nome + ' e tenho ' + this.idade + ' anos.';
+                        }
+                    };
+                </code>
+            </pre>
+        </section>
+
+        <section id="propriedades">
+            <h2>Propriedades de um Objeto</h2>
+            <p>Os objetos contêm propriedades que representam características ou informações associadas a eles.</p>
+            <p>Exemplo de acesso a propriedades de um objeto:</p>
+            <pre>
+                <code>
+                    console.log(pessoa.nome);  // Saída: João
+                    console.log(pessoa.idade);  // Saída: 30
+                </code>
+            </pre>
+        </section>
+
+        <section id="metodos">
+            <h2>Métodos de um Objeto</h2>
+            <p>Métodos são funções associadas a objetos e permitem que os objetos realizem ações.</p>
+            <p>Exemplo de chamada de método de um objeto:</p>
+            <pre>
+                <code>
+                    console.log(pessoa.saudacao());  // Saída: Olá, meu nome é João e tenho 30 anos.
+                </code>
+            </pre>
+        </section>
+
+        <!-- Adicione mais exemplos e explicações sobre objetos -->
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Curso de JavaScript</p>
+    </footer>
+</body>
+</html>
